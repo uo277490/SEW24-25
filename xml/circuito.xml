@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+<circuito nombre="Albert Park">
+    <longitud unidad="metros">5278</longitud>
+    <anchura unidad="metros">14.53</anchura>
+    <fechaCarrera>09/03/2024</fechaCarrera>
+    <horaCarrera>11:55</horaCarrera>
+    <numeroVueltas>58</numeroVueltas>
+    <localidad>Melbourne</localidad>
+    <pais>Australia</pais>
+
+    <referencias>
+        <referencia>https://www.formula1.com/en/racing/2024/australia</referencia>
+        <referencia>https://lebalap.academy/f1/circuito-albert-park/</referencia>
+    </referencias>
+    <galeriaFoto>
+        <foto>xml/circuito-albert-park-melbourne.png</foto>
+    </galeriaFoto>
+    <galeriaVideo>
+
+    </galeriaVideo>
+
+    <coordenadasSalida longitud="144.968904" latitud="-37.850003" altitud="4.86"></coordenadasSalida>
+    <coordenadasTramo>
+        <coordenadasPunto distancia="380.36" unidades="metros" numeroSector="1" longitud="144.96583333333334" latitud="-37.0975" altitud="4.15"></coordenadasPunto>
+        <coordenadasPunto distancia="161.42" unidades="metros" numeroSector="1" longitud="144.96583333333334" latitud="-37.8461111" altitud="4.68"></coordenadasPunto>
+        <coordenadasPunto distancia="543.68" unidades="metros" numeroSector="1" longitud="144.96194444444444" latitud="-37.8419444" altitud="4.72"></coordenadasPunto>
+        <coordenadasPunto distancia="141.32" unidades="metros" numeroSector="1" longitud="144.9636111111111" latitud="-37.8416667" altitud="4.64"></coordenadasPunto>
+        <coordenadasPunto distancia="218.09" unidades="metros" numeroSector="1" longitud="144.9636111111111" latitud="-37.8397222" altitud="5.6"></coordenadasPunto>
+        <coordenadasPunto distancia="331.75" unidades="metros" numeroSector="1" longitud="144.96694444444444" latitud="-37.8383333" altitud="4.85"></coordenadasPunto>
+        <coordenadasPunto distancia="93.21" unidades="metros" numeroSector="2" longitud="144.96777777777777" latitud="-37.8377778" altitud="4.58"></coordenadasPunto>
+        <coordenadasPunto distancia="88.52" unidades="metros" numeroSector="2" longitud="144.9686111111111" latitud="-37.8383333" altitud="4.95"></coordenadasPunto>
+        <coordenadasPunto distancia="182.2" unidades="metros" numeroSector="2" longitud="144.97083333333333" latitud="-37.8388889" altitud="5.19"></coordenadasPunto>
+        <coordenadasPunto distancia="317.75" unidades="metros" numeroSector="2" longitud="144.9713888888889" latitud="-37.8419444" altitud="5.33"></coordenadasPunto>
+        <coordenadasPunto distancia="356.19" unidades="metros" numeroSector="2" longitud="144.97055555555556" latitud="-37.845" altitud="5.16"></coordenadasPunto>
+        <coordenadasPunto distancia="228.39" unidades="metros" numeroSector="2" longitud="144.9713888888889" latitud="-37.8466667" altitud="5.17"></coordenadasPunto>
+        <coordenadasPunto distancia="104.44" unidades="metros" numeroSector="2" longitud="144.97222222222223" latitud="-37.8475" altitud="5.32"></coordenadasPunto>
+        <coordenadasPunto distancia="103.5" unidades="metros" numeroSector="3" longitud="144.97333333333333" latitud="-37.8480556" altitud="5.21"></coordenadasPunto>
+        <coordenadasPunto distancia="121.34" unidades="metros" numeroSector="3" longitud="144.97472222222223" latitud="-37.8480556" altitud="5.13"></coordenadasPunto>
+        <coordenadasPunto distancia="297.1" unidades="metros" numeroSector="3" longitud="144.97722222222222" latitud="-37.8497222" altitud="5.73"></coordenadasPunto>
+        <coordenadasPunto distancia="404.27" unidades="metros" numeroSector="3" longitud="144.97833333333332" latitud="-37.8533333" altitud="5.87"></coordenadasPunto>
+        <coordenadasPunto distancia="254.17" unidades="metros" numeroSector="3" longitud="144.97555555555556" latitud="-37.8538889" altitud="4.7"></coordenadasPunto>
+        <coordenadasPunto distancia="250.86" unidades="metros" numeroSector="3" longitud="144.97666666666666" latitud="-37.8519444" altitud="4.76"></coordenadasPunto>
+        <coordenadasPunto distancia="154.4" unidades="metros" numeroSector="3" longitud="144.9725" latitud="-37.8527778" altitud="4.32"></coordenadasPunto>
+        <coordenadasPunto distancia="451.86" unidades="metros" numeroSector="3" longitud="144.968904" latitud="-37.850003" altitud="4.86"></coordenadasPunto>
+    </coordenadasTramo>
+</circuito>

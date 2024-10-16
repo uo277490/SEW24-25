@@ -1,0 +1,105 @@
+/*
+    Saul Tuñon Fernandez
+    UO277490
+*/
+/*
+    Paleta de colores:
+    Baby Blue: #D4F1F4
+    Navy Blue: #05445E
+
+    Colores utilizados:
+    Baby Blue: #D4F1F4
+    Navy Blue: #05445E
+    Black: #000000
+    White: #ffffff
+*/
+
+/* Especificidad: 001 */ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #D4F1F4;
+    color: #000000;
+}
+
+/* Especificidad: 001 */
+header {
+    /* Hereda el color del body #000000 */
+    background-color: #05445E;
+}
+
+/* Especificidad: 002 */
+header a {
+    text-decoration-line: none;
+}
+
+/* Especificidad: 012 012 012 012*/
+nav a:link, nav a:visited, h1 a:link, h1 a:visited {
+    /* Heredan background-color de header #05445E */
+    color: #ffffff;
+}
+
+/* Especificidad: 002*/
+header + p {
+    font-size: 0.8rem;
+}
+
+/* Especificidad: 001 */
+ul {
+    list-style-type: square;
+}
+
+/* Especificidad: 001 */
+ol {
+    list-style-type: lower-roman;
+}
+
+/* Especificidad: 002 */
+ul ul {
+    list-style-type: '★';
+    font-size: 0.9rem;
+}
+
+/* Especificidad: 001 */
+dt {
+    font-weight: bold;
+}
+
+/* Especificidad: 001 */
+dd {
+    font-size: 0.95rem;
+}
+
+/* Especificidad: 012 */
+main a:link {
+    color: #960D28;
+}
+
+/* Especificidad: 012 */
+main a:visited {
+    color: #8b008b;
+}
+
+/* Especificidad: 001 001 001 */
+table, th, td {
+    border: #000000 solid 0.1rem;
+}
+
+/* Especificidad: 001 */
+video {
+    width: 50%;
+    height: auto;
+}
+
+/* Especificidad: 001 */
+img { 
+    max-width: 100%;
+    height: auto;
+}
+
+/* Especificidad: 012*/
+nav a.active {
+    font-weight: bold;
+    /*color: #E7D2CC;*/
+    /*color: #BAE46C;*/
+    color: #FEDE00;
+}
