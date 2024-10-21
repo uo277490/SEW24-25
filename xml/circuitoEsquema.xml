@@ -24,7 +24,7 @@
 
     <coordenadasSalida longitud="144.968904" latitud="-37.850003" altitud="4.86"></coordenadasSalida>
     <coordenadasTramo>
-        <coordenadasPunto distancia="380.36" unidades="metros" numeroSector="1" longitud="144.96583333333334" latitud="-37.0975" altitud="4.15"></coordenadasPunto>
+        <coordenadasPunto distancia="380.36" unidades="metros" numeroSector="1" longitud="144.9660306271284" latitud="-37.84756684690434" altitud="4.05"></coordenadasPunto>
         <coordenadasPunto distancia="161.42" unidades="metros" numeroSector="1" longitud="144.96583333333334" latitud="-37.8461111" altitud="4.68"></coordenadasPunto>
         <coordenadasPunto distancia="543.68" unidades="metros" numeroSector="1" longitud="144.96194444444444" latitud="-37.8419444" altitud="4.72"></coordenadasPunto>
         <coordenadasPunto distancia="141.32" unidades="metros" numeroSector="1" longitud="144.9636111111111" latitud="-37.8416667" altitud="4.64"></coordenadasPunto>
@@ -42,7 +42,7 @@
         <coordenadasPunto distancia="297.1" unidades="metros" numeroSector="3" longitud="144.97722222222222" latitud="-37.8497222" altitud="5.73"></coordenadasPunto>
         <coordenadasPunto distancia="404.27" unidades="metros" numeroSector="3" longitud="144.97833333333332" latitud="-37.8533333" altitud="5.87"></coordenadasPunto>
         <coordenadasPunto distancia="254.17" unidades="metros" numeroSector="3" longitud="144.97555555555556" latitud="-37.8538889" altitud="4.7"></coordenadasPunto>
-        <coordenadasPunto distancia="250.86" unidades="metros" numeroSector="3" longitud="144.97666666666666" latitud="-37.8519444" altitud="4.76"></coordenadasPunto>
+        <coordenadasPunto distancia="250.86" unidades="metros" numeroSector="3" longitud="144.9738353248694" latitud="-37.85224293515573" altitud="4.76"></coordenadasPunto>
         <coordenadasPunto distancia="154.4" unidades="metros" numeroSector="3" longitud="144.9725" latitud="-37.8527778" altitud="4.32"></coordenadasPunto>
         <coordenadasPunto distancia="451.86" unidades="metros" numeroSector="3" longitud="144.968904" latitud="-37.850003" altitud="4.86"></coordenadasPunto>
     </coordenadasTramo>
