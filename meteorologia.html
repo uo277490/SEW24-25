@@ -14,6 +14,7 @@
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <script src="js/pais.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,10 @@
     </header>
     <p>Estás en: <a href="index.html" title="Enlace a la pagina de inicio de F1Desktop">Inicio</a> >> Meteorologia</p>
     <h2>Meteorologia</h2>
-    <p>En desarrollo...</p>
+    <script>document.write("<p>A continuación se va a mostrar la meteorologia de "+pais.getInformacionPrincipal()+".</p>")</script>
+    <script>document.write(pais.getInformacionSecundaria());</script>
+    <script>pais.getCoordenadasMeta();</script>
+
     
 </body>
 
