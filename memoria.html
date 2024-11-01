@@ -5,15 +5,18 @@
     <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
     <meta name="author" content="Saul Tuñon Fernandez" />
-    <meta name="description" content="Seccion de juegos del F1 Desktop" />
-    <meta name="keywords" content=" f1, formulauno, juegos" />
+    <meta name="description" content="Juego de memoria de F1 Desktop" />
+    <meta name="keywords" content=" f1, formulauno, juegos, memoria" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>F1Desktop - Juegos</title>
+    <title>F1Desktop - Juego de Memoria</title>
     
     <link rel="icon" href="multimedia/imagenes/f1_icono.ico"/>
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/memoria.css" />
+
+    <script src="js/memoria.js"></script>
 </head>
 
 <body>
@@ -30,14 +33,19 @@
             <a href="juegos.html" title="juegos" class="active">Juegos</a>
         </nav>        
     </header>
-    <p>Estás en: <a href="index.html" title="Enlace a la pagina de inicio de F1Desktop">Inicio</a> >> Juegos</p>
-    <h2>Juegos</h2>
+    <p>Estás en: 
+        <a href="index.html" title="Enlace a la pagina de inicio de F1Desktop">Inicio</a> >> 
+        <a href="juegos.html" title="Enlace a la pagina de juegos de F1Desktop">Juegos</a> >> 
+        Juego de memoria</p>
+    
     <p>Los juegos que hay disponibles son los siguientes:</p>
     <ul>
         <li><a href="memoria.html" title="Enlace a la pagina del juego de memoria">Juego de memoria</a></li>
         <li><a href="semaforo.html" title="Enlace a la pagina del juego del tiempo de reaccion">Juego de tiempo de reaccion</a></li>
-    </ul>
-    
+    </ul>  
+    <script>
+        var memoria = new Memoria();
+    </script>
 </body>
 
 </html>
