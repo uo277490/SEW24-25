@@ -2,14 +2,14 @@
     Saúl Tuñón Fernández
     UO277490
 */
-
+/* Especificidad: 001 */ 
 header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     padding: 0rem 2rem 0rem 1rem;
 }
-
+/* Especificidad: 001 */ 
 nav {
     display: flex;
     flex-wrap:  wrap;

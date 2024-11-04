@@ -2,6 +2,7 @@
     Saul Tuñon Fernandez
     UO277490
 */
+/* Especificidad: 001 */ 
 section {
     background-color: #05445E; /*  Para ver espacios  */
     display: flex;
@@ -12,13 +13,13 @@ section {
     gap: 1ex;
     padding-bottom: 1em;
 }
-
+/* Especificidad: 011 */ 
 section > :first-child {
     width: 100%;
     text-align: center;
     color: #ffffff;
 }
-
+/* Especificidad: 001 */ 
 article {
     background-color: #D4F1F4 /* Para ver espacios */;
     flex: 0 20%;
@@ -31,7 +32,7 @@ article {
     transform-style: preserve-3d;
     transition: transform .5s;
 }
-
+/* Especificidad: 002 */ 
 article h3 {
     color: #000000;
     display: flex;
@@ -39,7 +40,7 @@ article h3 {
     align-items: center;
     justify-content: center;
 }
-
+/* Especificidad: 002 001 */ 
 article img, h3 {
     margin: 0;
     width: 100%;
@@ -48,15 +49,15 @@ article img, h3 {
 
     backface-visibility: hidden;
 }
-
+/* Especificidad: 011 */ 
 article[data-state='flip'] {
     transform: rotateY(180deg);
 }
-
+/* Especificidad: 011 */ 
 article[data-state='revealed'] {
     transform: rotateY(180deg);
 }
-
+/* Especificidad: 002 */ 
 article img {
     transform: rotateY(180deg);
 }
