@@ -69,7 +69,6 @@ class Memoria {
             // Intercambiar los elementos en las posiciones i y j
             [this.elements[i], this.elements[j]] = [this.elements[j], this.elements[i]];
         }
-        //console.log(this.elements);
     }
 
     unflipCards(){
@@ -125,7 +124,6 @@ class Memoria {
             sect.appendChild(article);
         }
         // Se añade el section al body del documento
-        console.log(document.body);
         document.body.appendChild(sect);
     }
 

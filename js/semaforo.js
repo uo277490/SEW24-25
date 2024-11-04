@@ -47,7 +47,6 @@ class Semaforo {
                 
         setTimeout(() => {
             this.unload_moment = new Date();
-            console.log(this.unload_moment);
             this.endSequence();
         },2000+(this.difficulty*100));
     }
