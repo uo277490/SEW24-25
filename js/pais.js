@@ -50,4 +50,4 @@ class Pais {
     }
 }
 
-var pais = new Pais("Australia", "Melbourne", "26316000");
+var pais = new Pais("Australia", "Canberra", "26316000");
