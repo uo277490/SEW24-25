@@ -5,7 +5,7 @@ class Fondo {
         this.nombreCircuito = nombreCircuito;
     }
 
-    obtenerFondos() {
+    obtenerFondo() {
         var apiKey = "006d07a986b413f549f4437d513d88d8";
         var lugar = "Albert Park f1";
         var urlAPI = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&text=${lugar}`;
