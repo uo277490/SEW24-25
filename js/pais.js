@@ -60,33 +60,22 @@ class Pais {
                 //console.log("Hola");
                 //console.log(datos);
                 console.log(datos);
-                var body = document.body;
                 datos.list.forEach(element => {
                     if(element.dt_txt.split(' ')[1] == '12:00:00'){
-                        var article = document.createElement('article');
+                        
+                        var article = $('<article>').append(
+                            $('<h3>').text(element.dt_txt.split(' ')[0]),
+                            $('<img>',{
+                                src: `https://openweathermap.org/img/wn/${element.weather[0].icon}@2x.png`,
+                                alt: `Icono de ${element.weather[0].main}`
+                            }),
+                            $('<p>').text("Temperatura máxima: ",element.main.temp_max),
+                            $('<p>').text("Temperatura Mínima: ",element.main.temp_min),
+                            $('<p>').text("Porcentaje de humedad: ",element.main.humidity," %"),
+                            $('<p>').text("Porcentaje de lluvia: ",element.pop*100," %")
+                        );
 
-                        var title = document.createElement('h3');
-                        title.textContent = element.dt_txt.split(' ')[0];
-                        var max_temp = document.createElement('p');
-                        max_temp.textContent = "Temperatura máxima: "+element.main.temp_max;
-                        var min_temp = document.createElement('p');
-                        min_temp.textContent = "Temperatura mínima: "+element.main.temp_min;
-                        var hum_per = document.createElement('p');
-                        hum_per.textContent = "Porcentaje de humedad: "+element.main.humidity+"%";
-                        var icono = document.createElement('img');
-                        icono.setAttribute("src",`https://openweathermap.org/img/wn/${element.weather[0].icon}@2x.png`);
-                        icono.setAttribute("alt", `Icono de ${element.weather[0].main}`);
-                        var lluvia = document.createElement('p');
-                        lluvia.textContent = "Porcentaje de lluvia: "+element.pop*100+" %";
-
-                        article.appendChild(title);
-                        article.appendChild(icono);
-                        article.appendChild(max_temp);
-                        article.appendChild(min_temp);
-                        article.appendChild(hum_per);
-                        article.appendChild(lluvia);
-
-                        body.appendChild(article);
+                        $('body').append(article);
                     }
                 });
                 

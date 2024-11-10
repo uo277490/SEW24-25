@@ -14,6 +14,10 @@
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/agenda_grid.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/agenda.js"></script>
 </head>
 
 <body>
@@ -33,7 +37,8 @@
     <!-- Datos con el contenidos que aparece en el navegador -->
     <p>Estás en: <a href="index.html" title="Enlace a la pagina de inicio de F1Desktop">Inicio</a> >> Calendario</p>
     <h2>Calendario</h2>
-    <p>En desarrollo...</p>
+
+    <button onclick="agenda.getCalendar()">Mostrar Calendario de carreras</button>
     
 </body>
 

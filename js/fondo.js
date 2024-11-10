@@ -22,6 +22,8 @@ class Fondo {
                 let srcimg = `https://farm${imagenEscogida.farm}.staticflickr.com/${imagenEscogida.server}/${imagenEscogida.id}_${imagenEscogida.secret}.jpg`;
                 
                 $('body').css('background-image', `url(${srcimg})`);
+                $('body').css('background-size', 'cover');
+                $('body').css(' background-repeat','no-repeat');
             });
     }
 
