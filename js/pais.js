@@ -51,34 +51,45 @@ class Pais {
 
     getMeteorologia() {
         var apiKey = "c3e7411bb2a75e74620fe6f92e1060c8";
-        var urlOpenWeatherMaps = `https://api.openweathermap.org/data/2.5/forecast?lat=${this.lat}&lon=${this.lon}&appid=${apiKey}&datatype=xml`;
-        
+        var urlOpenWeatherMaps = `https://api.openweathermap.org/data/2.5/forecast?lat=${this.lat}&lon=${this.lon}&appid=${apiKey}&units=metric&mode=xml`;
+
         $.ajax({
             url: urlOpenWeatherMaps,
+            datatype: "xml",
             method: 'GET',
             success: function (datos) {
-                //console.log("Hola");
                 //console.log(datos);
-                console.log(datos);
-                datos.list.forEach(element => {
-                    if(element.dt_txt.split(' ')[1] == '12:00:00'){
-                        
-                        var article = $('<article>').append(
-                            $('<h3>').text(element.dt_txt.split(' ')[0]),
-                            $('<img>',{
-                                src: `https://openweathermap.org/img/wn/${element.weather[0].icon}@2x.png`,
-                                alt: `Icono de ${element.weather[0].main}`
-                            }),
-                            $('<p>').text("Temperatura máxima: ",element.main.temp_max),
-                            $('<p>').text("Temperatura Mínima: ",element.main.temp_min),
-                            $('<p>').text("Porcentaje de humedad: ",element.main.humidity," %"),
-                            $('<p>').text("Porcentaje de lluvia: ",element.pop*100," %")
-                        );
 
+                $(datos).find('time').each(function () {
+                    var fecha = $(this).attr('from').split('T')[0];
+                    var hora = $(this).attr('from').split('T')[1];
+
+                    if (hora == '12:00:00') {
+                        var temperaturaMaxima = $(this).find('temperature').attr('max');
+                        var temperaturaMinima = $(this).find('temperature').attr('min');
+                        var humedad = $(this).find('humidity').attr('value');
+                        var icono = $(this).find('symbol').attr('var');
+                        var lluvia = $(this).find('precipitation').attr('value');
+
+
+                        var article = $('<article>').append(
+                            $('<h3>').text(fecha),
+                            $('<img>', {
+                                src: `https://openweathermap.org/img/wn/${icono}@2x.png`,
+                                alt: `Icono de ${$(this).find('symbol').attr('name')}`
+                            }),
+                            $('<p>').text("Temperatura máxima: " + temperaturaMaxima + "ºC"),
+                            $('<p>').text("Temperatura Mínima: " + temperaturaMinima + "ºC"),
+                            $('<p>').text("Porcentaje de humedad: " + humedad + " %"),
+
+                            lluvia ?
+                                $('<p>').text("Lluvia: " + lluvia + " mm/h") :
+                                $('<p>').text("Lluvia: no hay informacion disponible.")
+                        );
                         $('body').append(article);
                     }
                 });
-                
+
             },
             error: function () {
                 $("h3").html("¡Tenemos problemas! No puedo obtener XML de <a href='http://openweathermap.org'>OpenWeatherMap</a>");

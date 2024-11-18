@@ -23,7 +23,7 @@ class Fondo {
                 
                 $('body').css('background-image', `url(${srcimg})`);
                 $('body').css('background-size', 'cover');
-                $('body').css(' background-repeat','no-repeat');
+                $('body').css('background-repeat','no-repeat');
             });
     }
 
