@@ -103,3 +103,8 @@ nav a.active {
     /*color: #BAE46C;*/
     color: #FEDE00;
 }
+
+section > div:first-of-type {
+    width: 100%;
+    height: 50vh;
+}

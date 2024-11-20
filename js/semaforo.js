@@ -60,7 +60,7 @@ class Semaforo {
 
     stopReaction(){
         this.click_moment = new Date();
-        var time_diff = this.click_moment - this.unload_moment;
+        var time_diff = (this.click_moment - this.unload_moment)/1000;
 
         var sect = document.querySelector('section');
         
@@ -69,10 +69,10 @@ class Semaforo {
         var existShowTime = sect.querySelector('p');
         if(existShowTime==null){
             var show_time = document.createElement('p');
-            show_time.textContent = "Tiempo de reacción: "+time_diff+" ms.";
+            show_time.textContent = "Tiempo de reacción: "+time_diff+" s.";
             sect.appendChild(show_time);
         } else {
-            existShowTime.textContent = "Tiempo de reacción: "+time_diff+" ms.";
+            existShowTime.textContent = "Tiempo de reacción: "+time_diff+" s.";
         }
 
 

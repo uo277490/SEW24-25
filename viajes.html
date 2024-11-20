@@ -14,6 +14,13 @@
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/viajes.js"></script>
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
 </head>
 
 <body>
@@ -31,8 +38,21 @@
         </nav>        
     </header>
     <p>Estás en: <a href="index.html" title="Enlace a la pagina de inicio de F1Desktop">Inicio</a> >> Viajes</p>
-    <h2>Viajes</h2>
-    <p>En desarrollo.</p>
+    <main>
+        <h2>Viajes</h2>
+
+        <section>
+            <h3>Mapa estático</h3>
+            <input type="button" value="Obtener mapa estático" onClick ="viajes.getMapaEstatico();"/>
+        </section>
+
+        <section>
+            <h3>Mapa dinámico</h3>
+            <input type="button" value="Obtener mapa dinámico" onClick = "viajes.getMapaDinamico();"/>
+            <div></div>
+        </section>
+    </main>
+    
     
 </body>
 

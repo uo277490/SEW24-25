@@ -25,8 +25,7 @@ article {
     background-color: #D4F1F4 /* Para ver espacios */;
     flex: 0 20%;
     position: relative;
-    height: 14em;
-
+    height: 30vh;
     box-shadow: 0 .25em .15em #000000;
     cursor: pointer;
     transform: scale(1);
@@ -40,6 +39,7 @@ article h3 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 /* Especificidad: 002 001 */ 
 article img, h3 {

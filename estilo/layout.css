@@ -3,6 +3,10 @@
     UO277490
 */
 /* Especificidad: 001 */ 
+body{
+    min-height: 100vh;
+}
+
 header {
     display: flex;
     align-items: baseline;
@@ -14,6 +18,13 @@ nav {
     display: flex;
     flex-wrap:  wrap;
     gap: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
 }
 
 @media (max-width: 465px) {
