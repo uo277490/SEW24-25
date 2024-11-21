@@ -3,8 +3,8 @@
 <circuito nombre="Albert Park">
     <longitud unidad="metros">5278</longitud>
     <anchura unidad="metros">14.53</anchura>
-    <fechaCarrera>09/03/2024</fechaCarrera>
-    <horaCarrera>11:55</horaCarrera>
+    <fechaCarrera>24/03/2024</fechaCarrera>
+    <horaCarrera>05:00</horaCarrera>
     <numeroVueltas>58</numeroVueltas>
     <localidad>Melbourne</localidad>
     <pais>Australia</pais>

@@ -4,8 +4,8 @@
             xsi:schemaLocation="http://www.uniovi.es circuito.xsd" nombre="Albert Park">
     <longitud unidad="metros">5278</longitud>
     <anchura unidad="metros">14.53</anchura>
-    <fechaCarrera>2024-03-09</fechaCarrera>
-    <horaCarrera>11:55:00</horaCarrera>
+    <fechaCarrera>2024-03-24</fechaCarrera>
+    <horaCarrera>05:00:00</horaCarrera>
     <numeroVueltas>58</numeroVueltas>
     <localidad>Melbourne</localidad>
     <pais>Australia</pais>
