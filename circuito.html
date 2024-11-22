@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 
 <html lang="es">
+
 <head>
     <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
@@ -9,11 +10,20 @@
     <meta name="keywords" content=" f1, formulauno, circuito" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>F1Desktop - Circuito</title>
-    
-    <link rel="icon" href="multimedia/imagenes/f1_icono.ico"/>
+
+    <link rel="icon" href="multimedia/imagenes/f1_icono.ico" />
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
+
+    <script src="js/pais.js"></script>
+    <script src="js/circuito.js"></script>
 </head>
 
 <body>
@@ -28,12 +38,19 @@
             <a href="circuito.html" title="circuito" class="active">Circuito</a>
             <a href="viajes.html" title="viajes">Viajes</a>
             <a href="juegos.html" title="juegos">Juegos</a>
-        </nav>        
+        </nav>
     </header>
     <p>Estás en: <a href="index.html" title="Enlace a la pagina de inicio de F1Desktop">Inicio</a> >> Circuito</p>
     <h2>Circuito</h2>
-    <p>En desarrollo.</p>
-    
+
+    <section>
+        <h3>Datos del circuito</h3>
+        <input type="file" accept=".xml" onchange="circuito.leerCircuito();" />
+    </section>
+    <section>
+        <h3>Planimetria del circuito</h3>
+        <input type="file" accept=".kml" onchange="circuito.mostrarPlanimetria();" multiple />
+    </section>
 </body>
 
 </html>

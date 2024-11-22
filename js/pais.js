@@ -1,15 +1,4 @@
 class Pais {
-    // Atributos de la clase pais
-    nombrePais;
-    nombreCapital;
-    nombreCircuito;
-    poblacion;
-    gobierno;
-    lat;
-    lon;
-    alt;
-    religion;
-
     constructor(nombrePais, nombreCapital, poblacion) {
         this.nombrePais = nombrePais;
         this.nombreCapital = nombreCapital;
