@@ -176,7 +176,7 @@ class Circuito {
             center: [pais.lon, pais.lat], // starting position
             zoom: 13 // starting zoom
         });
-        
+
         // Usamos un contador para generar identificadores únicos
         let circuitIdCounter = 0;
 
@@ -232,7 +232,7 @@ class Circuito {
                         }
                     });
                 });
-                
+
                 map.resize();
             };
 
@@ -240,7 +240,7 @@ class Circuito {
                 console.error("Error al leer el archivo KML");
             };
 
-            
+
             reader.readAsText(archivo); // Leer el archivo como texto
         });
 
@@ -249,6 +249,35 @@ class Circuito {
 
     }
 
+    mostrarAltimetria() {
+        var archivo = document.querySelectorAll('input')[2].files[0];
+        console.log(archivo);
+
+        if (archivo && archivo.type === 'image/svg+xml') {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                const svgContent = e.target.result; 
+
+                console.log(svgContent);
+
+                const svgDataUrl = 'data:image/svg+xml;base64,' + btoa(svgContent);
+
+                var altimetria = $('<img>').attr("src", svgDataUrl)
+                                           .attr("alt", `Altimetria del circuito`);
+                
+                $('section:nth-of-type(3)').append(altimetria);
+            };
+
+            reader.onerror = function () {
+                console.error("Error al leer el archivo SVG.");
+            };
+
+            reader.readAsText(archivo); // Leemos el archivo como texto
+        } else {
+            console.error("Por favor, selecciona un archivo SVG.");
+        }
+    }
 }
 
 var circuito = new Circuito();

@@ -47,9 +47,15 @@
         <h3>Datos del circuito</h3>
         <input type="file" accept=".xml" onchange="circuito.leerCircuito();" />
     </section>
+
     <section>
         <h3>Planimetria del circuito</h3>
         <input type="file" accept=".kml" onchange="circuito.mostrarPlanimetria();" multiple />
+    </section>
+
+    <section>
+        <h3>Altimetria del circuito</h3>
+        <input type="file" accept=".svg" onchange="circuito.mostrarAltimetria();" />
     </section>
 </body>
 
