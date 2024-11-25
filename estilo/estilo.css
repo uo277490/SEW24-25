@@ -104,7 +104,7 @@ nav a.active {
     color: #FEDE00;
 }
 
-section > div:first-of-type {
+body > section > div:first-of-type {
     width: 100%;
     height: 50vh;
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Saul Tuñon Fernandez" />
+    <meta name="description" content="Documento con aplicacion de F1" />
+    <meta name="keywords" content=" f1, formulauno, aplicacion" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1Desktop - Parrilla ideal</title>
+
+    <link rel="icon" href="multimedia/imagenes/f1_icono.ico" />
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/api.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html" title="Enlace a la pagina de inicio de F1Desktop">F1 Desktop</a></h1>
+        <nav>
+            <a href="index.html" title="inicio">Inicio</a>
+            <a href="piloto.html" title="piloto">Piloto</a>
+            <a href="noticias.html" title="noticias">Noticias</a>
+            <a href="calendario.html" title="calendario">Calendario</a>
+            <a href="meteorologia.html" title="meteorologia">Meteorologia</a>
+            <a href="circuito.html" title="circuito">Circuito</a>
+            <a href="viajes.html" title="viajes">Viajes</a>
+            <a href="juegos.html" title="juegos" class="active">Juegos</a>
+        </nav>
+    </header>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <p>Estás en:
+        <a href="index.html" title="Enlace a la pagina de inicio de F1Desktop">Inicio</a> >>
+        <a href="juegos.html" title="Enlace a la pagina de juegos de F1Desktop">Juegos</a> >>
+        Parrilla ideal
+    </p>
+
+    <section>
+        <button onclick="api.activarPantallaCompleta()">Pantalla completa</button>
+        <h2>Parrilla ideal</h2>
+        <p>Aquí ppuedes crear la parrilla de salida ideal a tu gusto con gran cantidad de pilotos 
+            históricos de la Formula 1.</p>
+        <p>Carga los equipos para crear la parrilla ideal de Formula 1:</p>
+        <p><input type="file" onchange="api.obtenerEquipos();" /></p>
+
+        <p>Carga los pilotos para crear la parrilla ideal de Formula 1:</p>
+        <p><input type="file" onchange="api.obtenerPilotos();" /></p>
+    </section>
+
+
+</body>
