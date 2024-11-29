@@ -4,10 +4,17 @@ class Noticias {
             //El navegador no soporta el API File
             document.write("<p>¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!</p>");
         }
+
+        $(document).ready(function () {
+            document.querySelector('p input')
+                .addEventListener('change', () => noticias.readInputFile());
+            document.querySelector('button')
+                .addEventListener('click', () => noticias.añadirNoticia())
+        });
     }
 
-    readInputFile(files) {
-        var archivo = files[0];
+    readInputFile() {
+        var archivo = document.querySelector('input').files[0];
         var noticiasResult = [];
         if (archivo.type.match(/text.*/)) {
             var lector = new FileReader();
@@ -24,8 +31,8 @@ class Noticias {
                     // Añadimos la noticia al html
                     var article = $('<article>', {}).append(
                         $('<h3>').text(titulo),
-                        $('<p>').text("Autor: " + autor),
-                        $('<p>').text(texto)
+                        $('<p>').text(texto),
+                        $('<p>').text("Autor: " + autor)
                     );
                     $('body > section').append(article);
                 });
@@ -40,10 +47,9 @@ class Noticias {
 
     }
     añadirNoticia() {
-        var titulo = document.querySelector('input[name="titulo"]').value;
-        var autor = document.querySelector('input[name="autor"]').value;
-        var texto = document.querySelector('textarea[name="texto"]').value;
-
+        var titulo = document.querySelectorAll('input')[1].value;
+        var autor = document.querySelectorAll('input')[2].value;
+        var texto = document.querySelector('textarea').value;
         if (titulo && autor && texto) {
             var article = $('<article>', {}).append(
                 $('<h3>').text(titulo),

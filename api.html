@@ -42,16 +42,23 @@
         Parrilla ideal
     </p>
 
-    <section>
-        <button onclick="api.activarPantallaCompleta()">Pantalla completa</button>
-        <h2>Parrilla ideal</h2>
-        <p>Aquí ppuedes crear la parrilla de salida ideal a tu gusto con gran cantidad de pilotos 
-            históricos de la Formula 1.</p>
-        <p>Carga los equipos para crear la parrilla ideal de Formula 1:</p>
-        <p><input type="file" onchange="api.obtenerEquipos();" /></p>
+    <p>Los juegos que hay disponibles son los siguientes:</p>
+    <ul>
+        <li><a href="memoria.html" title="Enlace a la pagina del juego de memoria">Juego de memoria</a></li>
+        <li><a href="semaforo.html" title="Enlace a la pagina del juego del tiempo de reaccion">Juego de tiempo de reaccion</a></li>
+        <li><a href="api.html" title="Enlace a la pagina del parrilla ideal">Parrilla perfecta</a></li>
+    </ul>
 
-        <p>Carga los pilotos para crear la parrilla ideal de Formula 1:</p>
-        <p><input type="file" onchange="api.obtenerPilotos();" /></p>
+    <section>
+        <button title="Boton para poner pantalla completa">Pantalla completa</button>
+        <h2>Parrilla ideal</h2>
+        <p>Aquí puedes crear la parrilla de salida ideal a tu gusto con gran cantidad de pilotos 
+            históricos de la Formula 1.</p>
+        <p>Carga los equipos (de un archivo .txt) para crear la parrilla ideal de Formula 1:</p>
+        <p><input type="file" /></p>
+
+        <p>Carga los pilotos (de un archivo .txt) para crear la parrilla ideal de Formula 1:</p>
+        <p><input type="file" /></p>
     </section>
 
 

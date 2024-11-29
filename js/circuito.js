@@ -5,6 +5,13 @@ class Circuito {
             document.write("<p>¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!</p>");
         }
         this.circuitos = [];
+
+        $(document).ready(function () {
+            var inputs = document.querySelectorAll('input');
+            inputs[0].addEventListener('change', () => circuito.leerCircuito());
+            inputs[1].addEventListener('change', () => circuito.mostrarPlanimetria());
+            inputs[2].addEventListener('change', () => circuito.mostrarAltimetria());
+        });
     }
 
     /**
@@ -169,7 +176,7 @@ class Circuito {
 
         //Creamos un div donde mostrar el mapa para luego añadirlo al section
         var planMap = document.createElement('div');
-        console.log(planMap);
+        //console.log(planMap);
         mapboxgl.accessToken = 'pk.eyJ1IjoidW8yNzc0OTAiLCJhIjoiY20zbXd5bDNjMHg1YTJ3cW8ybDBpcXY0biJ9.TFlyhgMVjN1C9i3q9zVxsg';
         const map = new mapboxgl.Map({
             container: planMap, // container ID
@@ -251,21 +258,21 @@ class Circuito {
 
     mostrarAltimetria() {
         var archivo = document.querySelectorAll('input')[2].files[0];
-        console.log(archivo);
+        //console.log(archivo);
 
         if (archivo && archivo.type === 'image/svg+xml') {
             const reader = new FileReader();
 
             reader.onload = function (e) {
-                const svgContent = e.target.result; 
+                const svgContent = e.target.result;
 
-                console.log(svgContent);
+                ///console.log(svgContent);
 
                 const svgDataUrl = 'data:image/svg+xml;base64,' + btoa(svgContent);
 
                 var altimetria = $('<img>').attr("src", svgDataUrl)
-                                           .attr("alt", `Altimetria del circuito`);
-                
+                    .attr("alt", `Altimetria del circuito`);
+
                 $('section:nth-of-type(3)').append(altimetria);
             };
 

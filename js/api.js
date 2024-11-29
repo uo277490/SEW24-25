@@ -14,6 +14,14 @@ class Api {
         if(!document.documentElement.requestFullscreen){
             document.write("<p> Este navegador no soporta la API Fullscreen. </p>");
         }
+
+        $(document).ready(function () {
+            document.querySelector('button')
+                    .addEventListener('click', () => api.activarPantallaCompleta());
+            var inputs = document.querySelectorAll('p input');
+            inputs[0].addEventListener('change', () => api.obtenerEquipos());
+            inputs[1].addEventListener('change', () => api.obtenerPilotos());
+        });
     }
 
     obtenerPilotos() {

@@ -1,6 +1,10 @@
 class Agenda {
     constructor(url) {
         this.url = url;
+
+        $(document).ready(function() {
+            $('button').on('click',() => agenda.getCalendar());
+        });
     }
 
     getCalendar() {

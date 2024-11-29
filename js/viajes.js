@@ -1,6 +1,12 @@
 class Viajes {
     constructor() {
         navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.verErrores.bind(this));
+
+        $(document).ready(function () {
+            var inputs = document.querySelectorAll('input');
+            inputs[0].addEventListener('click', () => viajes.getMapaEstatico());
+            inputs[1].addEventListener('click', () => viajes.getMapaDinamico());
+        });
     }
 
     getPosicion(posicion) {
@@ -44,6 +50,7 @@ class Viajes {
     }
 
     getMapaDinamico() {
+        console.log("entra dinamico");
         var contMap = document.querySelector('section:nth-of-type(2) div');
 
         mapboxgl.accessToken = 'pk.eyJ1IjoidW8yNzc0OTAiLCJhIjoiY20zbXd5bDNjMHg1YTJ3cW8ybDBpcXY0biJ9.TFlyhgMVjN1C9i3q9zVxsg';
