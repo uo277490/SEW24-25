@@ -2,7 +2,7 @@
     Saul Tuñon Fernandez
     UO277490
 */
-
+/* Especificidad: 001 */
 article {
     /* Color heredado de body: #000000 */
     background-color: #ffff;
@@ -12,7 +12,8 @@ article {
     margin: 0.5rem;
 }
 
+/* Especificidad: 001 */
 img { 
-    width: 10%;
+    width: 40%;
     height: auto;
 }

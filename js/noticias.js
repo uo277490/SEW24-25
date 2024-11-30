@@ -41,9 +41,6 @@ class Noticias {
             }
             lector.readAsText(archivo);
         }
-        else {
-            errorArchivo.innerText = "Error : ¡¡¡ Archivo no válido !!!";
-        }
 
     }
     añadirNoticia() {
@@ -58,8 +55,6 @@ class Noticias {
             );
             $('body > section').append(article);
             document.querySelector('form').reset();
-        } else {
-            alert('Ha ocurrido un error al obtener los campos');
         }
     }
 }

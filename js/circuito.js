@@ -280,7 +280,7 @@ class Circuito {
                 console.error("Error al leer el archivo SVG.");
             };
 
-            reader.readAsText(archivo); // Leemos el archivo como texto
+            reader.readAsText(archivo);
         } else {
             console.error("Por favor, selecciona un archivo SVG.");
         }

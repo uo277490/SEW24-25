@@ -27,7 +27,6 @@ class Api {
     obtenerPilotos() {
         var archivo = document.querySelectorAll('input')[1].files[0];
         var sect = $('body > section:first-of-type');
-        console.log(sect);
 
         if (archivo.type.match(/text.*/)) {
             var lector = new FileReader();
@@ -36,7 +35,7 @@ class Api {
                 // Dividimos el contenido por líneas ya que cada piloto va en una linea
                 const pilotosLinea = contenido.split('\n');
                 this.pilotos = pilotosLinea;
-                console.log(this.pilotos);
+                //console.log(this.pilotos);
 
                 var sectPilotos = $('<section>');
                 sectPilotos.append($('<h3>').text("Pilotos"));
@@ -81,7 +80,7 @@ class Api {
                     );
 
                     artEquipo.on('dragover', (e) => {
-                        e.preventDefault(); // Permitir drop
+                        e.preventDefault(); 
                     });
 
                     artEquipo.on('drop', (e) => {
