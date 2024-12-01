@@ -6,7 +6,7 @@
 body{
     min-height: 100vh;
 }
-
+/* Especificidad: 001 */ 
 header {
     display: flex;
     align-items: baseline;
@@ -20,6 +20,7 @@ nav {
     gap: 2rem;
 }
 
+/* Especificidad: 001 */ 
 form {
     display: flex;
     flex-direction: column;
