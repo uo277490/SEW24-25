@@ -75,7 +75,7 @@ class Pais {
                                 $('<p>').text("Lluvia: " + lluvia + " mm/h") :
                                 $('<p>').text("Lluvia: no hay informacion disponible.")
                         );
-                        $('body').append(article);
+                        $('main').append(article);
                     }
                 });
 

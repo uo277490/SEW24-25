@@ -30,7 +30,7 @@ class Agenda {
                         $('<p>').text("Hora de la carrera: "+carrera.time)
                     );
                     
-                    $('body').append(article);
+                    $('main').append(article);
                     index++;
                 });
                 

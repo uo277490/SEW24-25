@@ -116,7 +116,7 @@ body>section>div:first-of-type {
 }
 
 /* */
-aside {
+body > article {
     width: 100%;
     max-width: 100vh;
     height: 70vh;
@@ -125,7 +125,7 @@ aside {
     border-radius: 1em;
 }
 
-aside img {
+body > article > img {
     width: 100%;
     max-width: 100vh;
     height: 60vh;
@@ -136,7 +136,7 @@ aside img {
 }
 
 
-aside button {
+body > article button {
     position: absolute;
     width: 2em;
     height: 2em;
@@ -153,16 +153,16 @@ aside button {
     justify-content: center;
 }
 
-aside button:active {
+body > article button:active {
     transform: scale(1.1);
 }
 
-aside button:nth-of-type(2) {
+body > article button:nth-of-type(2) {
     top: 50%;
     left: 2%;
 }
 
-aside button:nth-of-type(1) {
+body > article button:nth-of-type(1) {
     top: 50%;
     right: 2%;
 }

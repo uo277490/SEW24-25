@@ -25,7 +25,7 @@
 
             $xml = simplexml_load_string($rsp);
 
-            echo "<aside>";
+            echo "<article>";
             echo "<h3>Carrusel de fotos</h3>";
             // Acceder a las fotos
             $indice = 1;
@@ -49,7 +49,7 @@
 
             echo "<button> &gt; </button>";
             echo "<button> &lt; </button>";
-            echo "</aside>";
+            echo "</article>";
         }
     }
 ?>
