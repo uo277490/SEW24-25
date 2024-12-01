@@ -7,6 +7,15 @@ class Viajes {
             inputs[0].addEventListener('click', () => viajes.getMapaEstatico());
             inputs[1].addEventListener('click', () => viajes.getMapaDinamico());
         });
+        this.curSlide = 3;
+        this.maxSlide = 9;
+        // Añado el control a las fotos del carrusel
+        $(document).ready(function () {           
+            const nextSlide = document.querySelector("button:nth-of-type(1)");
+            nextSlide.addEventListener("click", () => viajes.fotoSiguiente());
+            const prevSlide = document.querySelector("button:nth-of-type(2)");
+            prevSlide.addEventListener("click", () => viajes.fotoAnterior());
+        });
     }
 
     getPosicion(posicion) {
@@ -67,7 +76,38 @@ class Viajes {
             .addTo(map);
 
         map.resize();
-        
+
+    }
+
+    // Metodos para el control de las fotos del carrusel
+    fotoSiguiente() {
+        console.log(this.curSlide);
+        const slides = document.querySelectorAll("article img");
+        // Comprueba si es la ultima foto del carrusel
+        if (this.curSlide == this.maxSlide) {
+            this.curSlide = 0;
+        } else {
+            this.curSlide++;
+        }
+        slides.forEach((slide, indx) => {
+            var trans = 100 * (indx - this.curSlide);
+            $(slide).css('transform', 'translateX(' + trans + '%)')
+        });
+    }
+
+    fotoAnterior() {
+        console.log(this.curSlide);
+        const slides = document.querySelectorAll("article img");
+        // Comprueba si es la primera foto del carrusel
+        if (this.curSlide === 0) {
+            this.curSlide = this.maxSlide;
+        } else {
+            this.curSlide--;
+        }
+        slides.forEach((slide, indx) => {
+            var trans = 100 * (indx - this.curSlide);
+            $(slide).css('transform', 'translateX(' + trans + '%)')
+        });
     }
 }
 
