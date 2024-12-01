@@ -21,7 +21,7 @@ h3 {
     text-align: center;
 }
 /* Especificidad: 001 */ 
-div {
+div { /* Hereda color de body #000000 */ 
     background-color: #000A;
     border: 0.25em solid black;
     aspect-ratio: 1;
@@ -36,11 +36,12 @@ button:nth-of-type(2) {
     grid-column: 3 / span 1;
 }
 
+/* Hereda color de body #000000 */ 
 @keyframes switchon{
     from {background-color: #000A;}
     to { background-color: #ff0000;}
 }
-
+/* Hereda color de body #000000 */ 
 @keyframes out{
     from { background-color: #ff0000;}
     to {background-color: #000A;}
@@ -70,8 +71,8 @@ main.load div:last-of-type {
 /* Especificidad: 012 */ 
 main.unload div {
     animation-name: out;
-    animation-duration: 0.1;
-    animation-delay: 0;
+    animation-duration: 0.1s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
 }
 /* Especificidad: 001 */
@@ -91,7 +92,7 @@ section p {
     text-align: center;
 }
 /* Especificidad: 001 */
-/* Sobrescribo estilo css ya que aqui quiero que se muestren los numeros normales*/
+/* Sobrescribo estilo.css ya que aqui quiero que se muestren los numeros normales */
 ol {
     list-style-type: decimal;
 }

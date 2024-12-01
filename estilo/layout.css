@@ -36,11 +36,10 @@ form {
 
     /* Especificidad: 001 */
     header {
-        display: flex;
+        /*display: flex;*/
         flex-flow: column wrap;
         padding-bottom: 1rem;
     }
-
 
     /* Especificidad: 001 */
     nav {

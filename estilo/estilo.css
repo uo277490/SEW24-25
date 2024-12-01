@@ -74,11 +74,13 @@ dd {
 
 /* Especificidad: 012 */
 main a:link {
+    /* Heredan background-color de body #D4F1F4 */
     color: #960D28;
 }
 
 /* Especificidad: 012 */
 main a:visited {
+    /* Heredan background-color de body #D4F1F4 */
     color: #8b008b;
 }
 
@@ -104,8 +106,7 @@ img {
 /* Especificidad: 012*/
 nav a.active {
     font-weight: bold;
-    /*color: #E7D2CC;*/
-    /*color: #BAE46C;*/
+    /* Heredan background-color de header #05445E */
     color: #FEDE00;
 }
 
@@ -115,7 +116,7 @@ body>section>div:first-of-type {
     height: 50vh;
 }
 
-/* */
+/* Especificidad: 012 */
 body > article {
     width: 100%;
     max-width: 100vh;
@@ -124,7 +125,7 @@ body > article {
     overflow: hidden;
     border-radius: 1em;
 }
-
+/* Especificidad: 003 */
 body > article > img {
     width: 100%;
     max-width: 100vh;
@@ -135,8 +136,9 @@ body > article > img {
     border-radius: 0.5em;
 }
 
-
+/* Especificidad: 003 */
 body > article button {
+    /* Heredan color de body #000000 */ 
     position: absolute;
     width: 2em;
     height: 2em;
@@ -153,15 +155,16 @@ body > article button {
     justify-content: center;
 }
 
+/* Especificidad: 013 */
 body > article button:active {
     transform: scale(1.1);
 }
-
+/* Especificidad: 013 */
 body > article button:nth-of-type(2) {
     top: 50%;
     left: 2%;
 }
-
+/* Especificidad: 013 */
 body > article button:nth-of-type(1) {
     top: 50%;
     right: 2%;

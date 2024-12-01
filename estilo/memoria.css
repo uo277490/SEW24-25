@@ -5,6 +5,7 @@
 */
 /* Especificidad: 001 */ 
 section {
+    /* Hereda color de body #000000 */ 
     background-color: #05445E; /*  Para ver espacios  */
     display: flex;
     flex-wrap: wrap;
@@ -18,10 +19,12 @@ section {
 section > :first-child {
     width: 100%;
     text-align: center;
+    /* Hereda el background color de section #05445E */
     color: #ffffff;
 }
 /* Especificidad: 001 */ 
 article {
+    /* Hereda color del body #000000 */
     background-color: #D4F1F4 /* Para ver espacios */;
     flex: 0 20%;
     position: relative;
@@ -34,6 +37,7 @@ article {
 }
 /* Especificidad: 002 */ 
 article h3 {
+    /* Hereda background color de article #D4F1F4 */
     color: #000000;
     display: flex;
     flex-direction: row;
