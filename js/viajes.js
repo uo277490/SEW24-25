@@ -1,8 +1,8 @@
 class Viajes {
     constructor() {
-        navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.verErrores.bind(this));
-
         $(document).ready(function () {
+            let ubicacion = document.querySelector("button:nth-of-type(1)");
+            ubicacion.addEventListener("click", () => viajes.obtenerUbicacion());
             var inputs = document.querySelectorAll('input');
             inputs[0].addEventListener('click', () => viajes.getMapaEstatico());
             inputs[1].addEventListener('click', () => viajes.getMapaDinamico());
@@ -11,11 +11,17 @@ class Viajes {
         this.maxSlide = 9;
         // Añado el control a las fotos del carrusel
         $(document).ready(function () {           
-            const nextSlide = document.querySelector("button:nth-of-type(1)");
+            const nextSlide = document.querySelector("article button:nth-of-type(1)");
             nextSlide.addEventListener("click", () => viajes.fotoSiguiente());
-            const prevSlide = document.querySelector("button:nth-of-type(2)");
+            const prevSlide = document.querySelector("article button:nth-of-type(2)");
             prevSlide.addEventListener("click", () => viajes.fotoAnterior());
         });
+    }
+
+    /* Metodo creado para evitar error de validacion de adaptabilidad en el que se obtiene la 
+        ubicacion del usuario */
+    obtenerUbicacion(){
+        navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.verErrores.bind(this));
     }
 
     getPosicion(posicion) {
@@ -59,7 +65,6 @@ class Viajes {
     }
 
     getMapaDinamico() {
-        console.log("entra dinamico");
         var contMap = document.querySelector('section:nth-of-type(2) div');
 
         mapboxgl.accessToken = 'pk.eyJ1IjoidW8yNzc0OTAiLCJhIjoiY20zbXd5bDNjMHg1YTJ3cW8ybDBpcXY0biJ9.TFlyhgMVjN1C9i3q9zVxsg';

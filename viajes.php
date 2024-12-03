@@ -73,6 +73,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/viajes.js"></script>
 
+    <!-- Estos dos ficheros es posible que provoquen ciertos errores de validacion de css y html -->
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
 </head>
@@ -94,6 +95,9 @@
     <p>Estás en: <a href="index.html" title="Enlace a la pagina de inicio de F1Desktop">Inicio</a> >> Viajes</p>
 
         <h2>Viajes</h2>
+        <p>Para mostrar los mapas estatico y dinamico, por favor, permita acceder a su ubicacion pulsando el siguiente boton:</p>
+        <button title="Compartir ubicacion para mostrar los mapas">Compartir ubicacion</button>
+        
         <?php
             $carrusel = new Carrusel("Canberra","Australia");
             $carrusel->obtenerFotosCarrusel();
