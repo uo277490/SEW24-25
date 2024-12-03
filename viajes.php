@@ -52,6 +52,33 @@
             echo "</article>";
         }
     }
+    class Moneda {
+        private $siglasLocal;
+        private $siglasCambio;
+
+        public function __construct($siglasLocal, $siglasCambio){
+            $this->siglasLocal = $siglasLocal;
+            $this->siglasCambio = $siglasCambio;
+        }
+
+        function obtenerCambioMoneda(){
+            $url = "https://api.frankfurter.dev/v1/latest?base={$this->siglasLocal}&symbols={$this->siglasCambio}";
+            echo $url;
+            $rsp = file_get_contents($url);
+            
+            $data = json_decode($rsp, true);
+            $cantidad = $data['amount'];
+            $base = $data['base'];
+            $date = $data['date'];
+            $valor = $data['rates'][$this->siglasCambio];
+
+            echo "<section>";
+            echo "<h3>Cambio de moneda</h3>";
+            echo "<p>El cambio entre la moneda {$this->siglasLocal} a la moneda {$this->siglasCambio} el dia
+                    {$date} es de: {$cantidad}{$this->siglasLocal} = {$valor}{$this->siglasCambio}</p>";
+            echo "</section>";
+        }
+    }
 ?>
 <!DOCTYPE HTML>
 <html lang="es">
@@ -97,10 +124,15 @@
         <h2>Viajes</h2>
         <p>Para mostrar los mapas estatico y dinamico, por favor, permita acceder a su ubicacion pulsando el siguiente boton:</p>
         <button title="Compartir ubicacion para mostrar los mapas">Compartir ubicacion</button>
+
+        <?php
+            $moneda = new Moneda("AUD","EUR");
+            $moneda->obtenerCambioMoneda();
+        ?>
         
         <?php
             $carrusel = new Carrusel("Canberra","Australia");
-            $carrusel->obtenerFotosCarrusel();
+            //$carrusel->obtenerFotosCarrusel();
         ?>
         <section>
             <h3>Mapa estático</h3>
