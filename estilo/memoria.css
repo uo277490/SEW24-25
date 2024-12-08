@@ -66,3 +66,11 @@ article[data-state='revealed'] {
 article img {
     transform: rotateY(180deg);
 }
+
+/* Especificidad: 002 */
+section p {
+    /* Hereda el background-color de section #05445E */
+    color: #ffffff;
+    margin: 0rem 0.5rem;
+    text-align: justify;
+}

@@ -100,14 +100,21 @@ class Memoria {
     }
 
     createElements(){
+        // Añado un boton para poder mostrar posteriormente la ayuda del juego si es necesaria
+        var btnAyuda = document.createElement('button');
+        btnAyuda.textContent = "Ayuda";
+        btnAyuda.addEventListener('click',() => this.mostrarAyuda());
+        document.body.append(btnAyuda);
+
+
         // Se crea el section
         const sect = document.createElement('section');
         // Se crea y añade el h2 al section
-        const h3 = document.createElement("h2");
-        h3.textContent = "Juego de Memoria";
-        sect.appendChild(h3);
+        const h2 = document.createElement("h2");
+        h2.textContent = "Juego de Memoria";
+        sect.appendChild(h2);
 
-        for (const el of this.elements){
+        for (const el of this.elements){ 
             // Se crea el article y se le añade el atributo data-element
             let article = document.createElement("article");
             article.setAttribute("data-element", el.element);
@@ -146,6 +153,25 @@ class Memoria {
             game.secondCard = this;
             game.checkForMatch();
         }
+    }
+
+
+    mostrarAyuda(){
+        // Creo un section para mostrar la ayuda del juego al usuario
+        var sect_ayuda = document.createElement('section');
+        var ayuda = document.createElement('h2');
+        ayuda.textContent = "Ayuda del juego de memoria";
+        sect_ayuda.appendChild(ayuda);
+        var texto_ayuda = document.createElement('p');
+        var txt = "El juego consiste en ir pulsando en las diferentes tarjetas de dos en dos ";
+        txt += "buscando las parejas (hay 6 parejas de tarjetas) hasta que todas las tarjetas queden reveladas. ";
+        txt += "Una pareja queda revelada cuando se pulsan ambas tarjetas en la misma interacción. Si se pulsará en ";
+        txt += "dos tarjetas que no son iguales el sistema las mostrará un par de segundos y acto seguido las volverá a ";
+        txt += "ocultar, permitiendo al usuario seguir destapando tarjetas para completar el tablero.";
+        
+        texto_ayuda.textContent = txt;
+        sect_ayuda.appendChild(texto_ayuda);
+        document.body.appendChild(sect_ayuda);
     }
     
 
