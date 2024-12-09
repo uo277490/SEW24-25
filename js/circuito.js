@@ -257,33 +257,33 @@ class Circuito {
     }
 
     mostrarAltimetria() {
-        var archivo = document.querySelectorAll('input')[2].files[0];
-        //console.log(archivo);
+        // Guardamos todos los ficheros svg que se meten en el input
+        var archivos = document.querySelectorAll('input')[2].files;
+        // Para cada uno de los archivos añadimos una imagen con el svg al section correspondiente
+        Array.from(archivos).forEach(archivo => {
+            if (archivo && archivo.type === 'image/svg+xml') {
+                const reader = new FileReader();
 
-        if (archivo && archivo.type === 'image/svg+xml') {
-            const reader = new FileReader();
+                reader.onload = function (e) {
+                    const svgContent = e.target.result;
 
-            reader.onload = function (e) {
-                const svgContent = e.target.result;
+                    const svgDataUrl = 'data:image/svg+xml;base64,' + btoa(svgContent);
 
-                ///console.log(svgContent);
+                    var altimetria = $('<img>').attr("src", svgDataUrl)
+                        .attr("alt", `Altimetria del circuito`);
 
-                const svgDataUrl = 'data:image/svg+xml;base64,' + btoa(svgContent);
+                    $('section:nth-of-type(3)').append(altimetria);
+                };
 
-                var altimetria = $('<img>').attr("src", svgDataUrl)
-                    .attr("alt", `Altimetria del circuito`);
+                reader.onerror = function () {
+                    console.error("Error al leer el archivo SVG.");
+                };
 
-                $('section:nth-of-type(3)').append(altimetria);
-            };
-
-            reader.onerror = function () {
-                console.error("Error al leer el archivo SVG.");
-            };
-
-            reader.readAsText(archivo);
-        } else {
-            console.error("Por favor, selecciona un archivo SVG.");
-        }
+                reader.readAsText(archivo);
+            } else {
+                console.error("Por favor, selecciona un archivo SVG.");
+            }
+        });
     }
 }
 

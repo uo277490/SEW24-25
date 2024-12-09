@@ -1,70 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="2.0" viewBox="-150 0 5384.819999999999 9.870000000000001" preserveAspectRatio="xMinYMin meet" >
-<polyline points="0.0,4.86 76.072,4.05 108.356,4.68 217.092,4.72 245.356,4.64 288.974,5.6 355.32399999999996,4.85 373.966,4.58 391.66999999999996,4.95 428.10999999999996,5.19 491.65999999999997,5.33 562.8979999999999,5.16 608.5759999999999,5.17 629.4639999999999,5.32 650.164,5.21 674.432,5.13 733.852,5.73 814.7059999999999,5.87 865.54,4.7 915.7119999999999,4.76 946.5919999999999,4.32 1036.9639999999997,4.86 " style="fill:white;stroke:red;stroke-width:4" />
-<text x="0.0" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0" viewBox="-300 50 5384.819999999999 505.00000000000006" preserveAspectRatio="xMinYMin meet" >
+<polyline points="0.0,514.5 0.0,302.49999999999994 253.57333333333335,505.00000000000006 361.18666666666667,347.5000000000001 723.64,337.5000000000001 817.8533333333334,357.5000000000001 963.2466666666666,117.50000000000011 1184.4133333333332,305.0000000000001 1246.5533333333333,372.5 1305.5666666666666,280.0 1427.033333333333,219.99999999999994 1638.8666666666666,185.0 1876.3266666666666,227.5 2028.5866666666664,225.00000000000006 2098.213333333333,187.49999999999994 2167.213333333333,215.0 2248.1066666666666,235.00000000000006 2446.173333333333,84.99999999999994 2715.6866666666665,50.0 2885.133333333333,342.5 3052.373333333333,327.50000000000006 3155.306666666666,437.49999999999994 3456.5466666666657,302.49999999999994 3456.5466666666657,514.5 0.0,514.5 " style="fill:white;stroke:red;stroke-width:4" />
+<text x="0.0" y="504.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+
+</text>
+<text x="0.0" y="292.49999999999994" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 salida
 </text>
-<text x="76.072" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="253.57333333333335" y="495.00000000000006" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 1
 </text>
-<text x="108.356" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="361.18666666666667" y="337.5000000000001" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 2
 </text>
-<text x="217.092" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="723.64" y="327.5000000000001" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 3
 </text>
-<text x="245.356" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="817.8533333333334" y="347.5000000000001" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 4
 </text>
-<text x="288.974" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="963.2466666666666" y="107.50000000000011" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 5
 </text>
-<text x="355.32399999999996" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="1184.4133333333332" y="295.0000000000001" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 6
 </text>
-<text x="373.966" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="1246.5533333333333" y="362.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 7
 </text>
-<text x="391.66999999999996" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="1305.5666666666666" y="270.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 8
 </text>
-<text x="428.10999999999996" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="1427.033333333333" y="209.99999999999994" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 9
 </text>
-<text x="491.65999999999997" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="1638.8666666666666" y="175.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 10
 </text>
-<text x="562.8979999999999" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="1876.3266666666666" y="217.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 11
 </text>
-<text x="608.5759999999999" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="2028.5866666666664" y="215.00000000000006" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 12
 </text>
-<text x="629.4639999999999" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="2098.213333333333" y="177.49999999999994" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 13
 </text>
-<text x="650.164" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="2167.213333333333" y="205.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 14
 </text>
-<text x="674.432" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="2248.1066666666666" y="225.00000000000006" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 15
 </text>
-<text x="733.852" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="2446.173333333333" y="74.99999999999994" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 16
 </text>
-<text x="814.7059999999999" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="2715.6866666666665" y="40.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 17
 </text>
-<text x="865.54" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="2885.133333333333" y="332.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 18
 </text>
-<text x="915.7119999999999" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="3052.373333333333" y="317.50000000000006" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 19
 </text>
-<text x="946.5919999999999" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="3155.306666666666" y="427.49999999999994" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Tramo 20
 </text>
-<text x="1036.9639999999997" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+<text x="3456.5466666666657" y="292.49999999999994" style="writing-mode: tb; glyph-orientation-vertical: 0;">
 Meta
+</text>
+<text x="3456.5466666666657" y="504.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+
+</text>
+<text x="0.0" y="504.5" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+
 </text>
 </svg>

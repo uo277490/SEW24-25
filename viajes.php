@@ -132,7 +132,7 @@
         
         <?php
             $carrusel = new Carrusel("Canberra","Australia");
-            //$carrusel->obtenerFotosCarrusel();
+            $carrusel->obtenerFotosCarrusel();
         ?>
         <section>
             <h3>Mapa estático</h3>
