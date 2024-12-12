@@ -110,6 +110,7 @@
         <li><a href="memoria.html" title="Enlace a la pagina del juego de memoria">Juego de memoria</a></li>
         <li><a href="semaforo.php" title="Enlace a la pagina del juego del tiempo de reaccion">Juego de tiempo de reacción</a></li>
         <li><a href="api.html" title="Enlace a la pagina del parrilla ideal">Parrilla perfecta</a></li>
+        <li><a href="php/equipo.php" title="Enlace a la pagina de puntuar equipo aleatorio">Equipo aleatorio</a></li>
     </ul>
     <main>
         <script>
